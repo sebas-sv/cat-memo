@@ -81,7 +81,7 @@ function App() {
           const isFoundStyle = foundPairs.includes(index) ? ' found' : '';
 
           return (
-            <div className={"card-outer" + iShownStyle + isFoundStyle} onClick={() => handleClick(index)}>
+            <div key={index} className={"card-outer" + iShownStyle + isFoundStyle} onClick={() => handleClick(index)}>
               <div className="card">
                 <div className="frontside">
                   <img src={card} alt="" />
